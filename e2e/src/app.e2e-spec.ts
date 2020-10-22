@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to angular8-springboot-client!');
+    expect(page.getTitleText()).toEqual('Welcome to gym-web!');
   });
 
   afterEach(async () => {

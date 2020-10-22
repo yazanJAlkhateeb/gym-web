@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular8-springboot-client": {
+    "gym-web": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular8-springboot-client",
+            "outputPath": "dist/gym-web",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -57,18 +57,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular8-springboot-client:build"
+            "browserTarget": "gym-web:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular8-springboot-client:build:production"
+              "browserTarget": "gym-web:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular8-springboot-client:build"
+            "browserTarget": "gym-web:build"
           }
         },
         "test": {
@@ -109,18 +109,18 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular8-springboot-client:serve"
+            "devServerTarget": "gym-web:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular8-springboot-client:serve:production"
+              "devServerTarget": "gym-web:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "angular8-springboot-client",
+  "defaultProject": "gym-web",
   "cli": {
     "analytics": "bc771849-c658-4978-adef-8a758dcf8fa4"
   }
