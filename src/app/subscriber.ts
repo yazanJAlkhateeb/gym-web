@@ -1,7 +1,8 @@
-export class Employee {
+export class Subscriber {
   id: number;
   firstName: string;
-  lastName: string;
+  subscriberId: string;
+  startOfSubscription: string;
   endOfSubscription: string;
   active: boolean;
 }

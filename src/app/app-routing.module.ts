@@ -1,20 +1,23 @@
-import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
-import { CreateEmployeeComponent } from './create-employee/create-employee.component';
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { EmployeeListComponent } from './employee-list/employee-list.component';
-import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
+import {SubscriberDetailsComponent} from './subscriber-details/subscriber-details.component';
+import {CreateSubscriberComponent} from './create-subscriber/create-subscriber.component';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {SubscribersListComponent} from './subscribers-list/subscribers-list.component';
+import {UpdateSubscriberComponent} from './update-subscriber/update-subscriber.component';
+import {SubscriptionCheckComponent} from "./subscription-check/subscription-check.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: 'employee', pathMatch: 'full' },
-  { path: 'employees', component: EmployeeListComponent },
-  { path: 'add', component: CreateEmployeeComponent },
-  { path: 'update/:id', component: UpdateEmployeeComponent },
-  { path: 'details/:id', component: EmployeeDetailsComponent },
+  {path: '', redirectTo: 'subscriber', pathMatch: 'full'},
+  {path: 'subscribers', component: SubscribersListComponent},
+  {path: 'add', component: CreateSubscriberComponent},
+  {path: 'update/:id', component: UpdateSubscriberComponent},
+  {path: 'details/:id', component: SubscriberDetailsComponent},
+  {path: 'check', component: SubscriptionCheckComponent},
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

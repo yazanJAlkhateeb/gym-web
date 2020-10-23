@@ -1,0 +1,33 @@
+<h2>Subscription Check</h2>
+<form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="name">subscriber Id</label>
+    <input [(ngModel)]="subscriberId" class="form-control" id="subscriberId" name="subscriberId" required type="text">
+  </div>
+  <button class="btn btn-success" type="submit">Submit</button>
+</form>
+<hr/>
+<div *ngIf="subscriber">
+  <table class="table table-striped">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th>Name</th>
+      <th>subscriber Id</th>
+      <th>Subscription Starting Date</th>
+      <th>Subscription Ending Date</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td> {{subscriber.id}}</td>
+      <td>{{subscriber.firstName}}</td>
+      <td>{{subscriber.subscriberId}}</td>
+      <td>{{subscriber.startOfSubscription}}</td>
+      <td>{{subscriber.endOfSubscription}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
