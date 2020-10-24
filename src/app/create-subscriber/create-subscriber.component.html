@@ -1,5 +1,5 @@
 <h3>Create Subscriber</h3>
-<div [hidden]="submitted" style="width: 400px;">
+<div [hidden]="submitted" >
   <form (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="name">First Name</label>
@@ -21,7 +21,7 @@
       <input type="date" class="form-control" id="endOfSubscription" required [(ngModel)]="subscriber.endOfSubscription" name="endOfSubscription">
     </div>
 
-    <button type="submit" class="btn btn-success">Submit</button>
+    <button type="submit" class="btn btn-dark"style="width: 200px;">Submit</button>
   </form>
 </div>
 

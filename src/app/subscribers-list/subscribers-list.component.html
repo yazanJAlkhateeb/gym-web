@@ -5,27 +5,31 @@
   <div class="panel-body">
     <table class="table table-striped">
       <thead class="thead-dark">
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Name</th>
-          <th scope="col">subscriber Id</th>
-          <th scope="col">Subscription Starting Date</th>
-          <th scope="col">Subscription Ending Date</th>
-          <th scope="col">Actions</th>
-        </tr>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">subscriber Id</th>
+        <th scope="col">Subscription Starting Date</th>
+        <th scope="col">Subscription Ending Date</th>
+        <th scope="col">Actions</th>
+      </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let subscriber of subscribers | async">
-          <td>{{subscriber.id}}</td>
-          <td>{{subscriber.firstName}}</td>
-          <td>{{subscriber.subscriberId}}</td>
-          <td>{{subscriber.startOfSubscription}}</td>
-          <td>{{subscriber.endOfSubscription}}</td>
-          <td><button (click)="deleteSubscriber(subscriber.id)" class="btn btn-danger">Delete</button>
-              <button (click)="updateSubscriber(subscriber.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
-              <button (click)="subscriberDetails(subscriber.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
-          </td>
-        </tr>
+      <tr *ngFor="let subscriber of subscribers | async"
+          [ngClass]="today(subscriber.endOfSubscription)?'green':'red'">
+        <td>{{subscriber.id}}</td>
+        <td>{{subscriber.firstName}}</td>
+        <td>{{subscriber.subscriberId}}</td>
+        <td>{{subscriber.startOfSubscription}}</td>
+        <td>{{subscriber.endOfSubscription}}</td>
+        <td>
+          <button (click)="deleteSubscriber(subscriber.id)" class="btn btn-danger">Delete</button>
+          <button (click)="updateSubscriber(subscriber.id)" class="btn btn-info" style="margin-left: 10px">Update
+          </button>
+          <button (click)="subscriberDetails(subscriber.id)" class="btn btn-info" style="margin-left: 10px">Details
+          </button>
+        </td>
+      </tr>
       </tbody>
     </table>
   </div>

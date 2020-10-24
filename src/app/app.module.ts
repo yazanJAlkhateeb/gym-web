@@ -9,6 +9,7 @@ import {SubscribersListComponent} from './subscribers-list/subscribers-list.comp
 import {HttpClientModule} from '@angular/common/http';
 import {UpdateSubscriberComponent} from './update-subscriber/update-subscriber.component';
 import {SubscriptionCheckComponent} from "./subscription-check/subscription-check.component";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {SubscriptionCheckComponent} from "./subscription-check/subscription-chec
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

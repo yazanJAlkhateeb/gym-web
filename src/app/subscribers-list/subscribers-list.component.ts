@@ -1,9 +1,8 @@
-import { SubscriberDetailsComponent } from './../subscriber-details/subscriber-details.component';
-import { Observable } from "rxjs";
-import { SubscriberService} from "./../subscriber.service";
-import { Subscriber } from "./../subscriber";
-import { Component, OnInit } from "@angular/core";
-import { Router } from '@angular/router';
+import {Observable} from "rxjs";
+import {SubscriberService} from "./../subscriber.service";
+import {Subscriber} from "./../subscriber";
+import {Component, OnInit} from "@angular/core";
+import {Router} from '@angular/router';
 
 @Component({
   selector: "app-subscriber-list",
@@ -14,7 +13,8 @@ export class SubscribersListComponent implements OnInit {
   subscribers: Observable<Subscriber[]>;
 
   constructor(private subscriberService: SubscriberService,
-    private router: Router) {}
+              private router: Router) {
+  }
 
   ngOnInit() {
     this.reloadData();
@@ -34,11 +34,16 @@ export class SubscribersListComponent implements OnInit {
         error => console.log(error));
   }
 
-  subscriberDetails(id: number){
+  today(endOfSubscription: string) {
+    return Date.parse(endOfSubscription)> Date.now();
+
+  }
+
+  subscriberDetails(id: number) {
     this.router.navigate(['details', id]);
   }
 
-  updateSubscriber(id: number){
+  updateSubscriber(id: number) {
     this.router.navigate(['update', id]);
   }
 }
