@@ -10,6 +10,8 @@ import {HttpClientModule} from '@angular/common/http';
 import {UpdateSubscriberComponent} from './update-subscriber/update-subscriber.component';
 import {SubscriptionCheckComponent} from "./subscription-check/subscription-check.component";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from "@angular/material/icon";
+import { CameraComponent } from './camera/camera.component';
 
 @NgModule({
   declarations: [
@@ -18,15 +20,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SubscriberDetailsComponent,
     SubscribersListComponent,
     UpdateSubscriberComponent,
-    SubscriptionCheckComponent
+    SubscriptionCheckComponent,
+    CameraComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
-    BrowserAnimationsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule,
+        HttpClientModule,
+        BrowserAnimationsModule,
+        MatIconModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
