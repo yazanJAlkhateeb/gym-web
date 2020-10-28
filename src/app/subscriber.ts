@@ -4,5 +4,5 @@ export class Subscriber {
   subscriberId: string;
   startOfSubscription: string;
   endOfSubscription: string;
-  active: boolean;
+  image: string;
 }

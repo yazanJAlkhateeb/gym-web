@@ -12,6 +12,7 @@ import {SubscriptionCheckComponent} from "./subscription-check/subscription-chec
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from "@angular/material/icon";
 import { CameraComponent } from './camera/camera.component';
+import {WebcamModule} from "ngx-webcam";
 
 @NgModule({
   declarations: [
@@ -21,16 +22,17 @@ import { CameraComponent } from './camera/camera.component';
     SubscribersListComponent,
     UpdateSubscriberComponent,
     SubscriptionCheckComponent,
-    CameraComponent
+    CameraComponent,
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        FormsModule,
-        HttpClientModule,
-        BrowserAnimationsModule,
-        MatIconModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    WebcamModule,
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
