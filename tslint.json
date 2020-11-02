@@ -1,5 +1,8 @@
 {
   "extends": "tslint:recommended",
+  "rulesDirectory": [
+    "codelyzer"
+  ],
   "rules": {
     "align": {
       "options": [
@@ -13,35 +16,20 @@
     "deprecation": {
       "severity": "warn"
     },
-    "component-class-suffix": true,
-    "contextual-lifecycle": true,
     "curly": true,
-    "directive-class-suffix": true,
-    "directive-selector": [
-      true,
-      "attribute",
-      "app",
-      "camelCase"
-    ],
-    "component-selector": [
-      true,
-      "element",
-      "app",
-      "kebab-case"
-    ],
-    "eofline": true,
     "import-blacklist": [
       true,
       "rxjs/Rx"
     ],
+    "interface-name": false,
+    "eofline": true,
+    "max-classes-per-file": false,
     "import-spacing": true,
     "indent": {
       "options": [
         "spaces"
       ]
     },
-    "interface-name": false,
-    "max-classes-per-file": false,
     "max-line-length": [
       true,
       140
@@ -87,13 +75,10 @@
       "single"
     ],
     "trailing-comma": false,
-    "no-conflicting-lifecycle": true,
-    "no-host-metadata-property": true,
-    "no-input-rename": true,
-    "no-inputs-metadata-property": true,
-    "no-output-native": true,
     "no-output-on-prefix": true,
-    "no-output-rename": true,
+    "use-input-property-decorator": true,
+    "use-output-property-decorator": true,
+    "use-host-property-decorator": true,
     "semicolon": {
       "options": [
         "always"
@@ -108,9 +93,7 @@
         "named": "never"
       }
     },
-    "no-outputs-metadata-property": true,
-    "template-banana-in-box": true,
-    "template-no-negated-async": true,
+    "no-input-rename": true,
     "typedef-whitespace": {
       "options": [
         {
@@ -129,8 +112,11 @@
         }
       ]
     },
-    "use-lifecycle-interface": true,
+    "no-output-rename": true,
+    "use-life-cycle-interface": true,
     "use-pipe-transform-interface": true,
+    "component-class-suffix": true,
+    "directive-class-suffix": true,
     "variable-name": {
       "options": [
         "ban-keywords",
@@ -148,8 +134,5 @@
         "check-typecast"
       ]
     }
-  },
-  "rulesDirectory": [
-    "codelyzer"
-  ]
+  }
 }

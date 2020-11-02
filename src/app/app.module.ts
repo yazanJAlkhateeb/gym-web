@@ -1,40 +1,32 @@
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
-import {FormsModule} from '@angular/forms';
-import {AppRoutingModule} from './app-routing.module';
-import {AppComponent} from './app.component';
-import {CreateSubscriberComponent} from './create-subscriber/create-subscriber.component';
-import {SubscriberDetailsComponent} from './subscriber-details/subscriber-details.component';
-import {SubscribersListComponent} from './subscribers-list/subscribers-list.component';
-import {HttpClientModule} from '@angular/common/http';
-import {UpdateSubscriberComponent} from './update-subscriber/update-subscriber.component';
-import {SubscriptionCheckComponent} from "./subscription-check/subscription-check.component";
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatIconModule} from "@angular/material/icon";
-import { CameraComponent } from './camera/camera.component';
-import {WebcamModule} from "ngx-webcam";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
+import { RouterModule } from "@angular/router";
+import { ToastrModule } from 'ngx-toastr';
+
+import { AppComponent } from "./app.component";
+import { AdminLayoutComponent } from "./layouts/admin-layout/admin-layout.component";
+import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
+
+import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
+
+import { AppRoutingModule } from "./app-routing.module";
+import { ComponentsModule } from "./components/components.module";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CreateSubscriberComponent,
-    SubscriberDetailsComponent,
-    SubscribersListComponent,
-    UpdateSubscriberComponent,
-    SubscriptionCheckComponent,
-    CameraComponent,
-  ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    BrowserAnimationsModule,
-    MatIconModule,
-    WebcamModule,
+    ComponentsModule,
+    NgbModule,
+    RouterModule,
+    AppRoutingModule,
+    ToastrModule.forRoot()
   ],
+  declarations: [AppComponent, AdminLayoutComponent, AuthLayoutComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule {}

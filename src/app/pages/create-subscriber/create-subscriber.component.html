@@ -1,0 +1,129 @@
+<div class=" content">
+    <div class=" row">
+        <div class=" col-md-8">
+            <div class=" card">
+                <div class=" card-header">
+                    <h5 class=" title">Create Subscriber</h5></div>
+                <div class=" card-body">
+                    <form (ngSubmit)="onSubmit()">
+                        <div class=" row">
+                            <div class=" col-md-6 pr-md-1">
+                                <div class="form-group">
+                                    <label> First Name </label>
+                                    <input [(ngModel)]="subscriber.firstName" class="form-control" id="firstName"
+                                           name="firstName"
+                                           placeholder="First Name"
+                                           required
+                                           type="text">
+                                </div>
+                            </div>
+                            <div class=" col-md-6 pl-md-1">
+                                <div class=" form-group">
+                                    <label> Last Name </label>
+                                    <input [(ngModel)]="subscriber.lastName"
+                                           class=" form-control"
+                                           id="lastName"
+                                           placeholder="Last Name"
+                                           type="text"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" row">
+                            <div class=" col-md-6 pr-md-1">
+                                <div class=" form-group">
+                                    <label> Starting Date </label>
+                                    <input [(ngModel)]="subscriber.startOfSubscription" class="form-control"
+                                           id="startOfSubscription"
+                                           name="startOfSubscription"
+                                           required type="date">
+                                </div>
+                            </div>
+                            <div class=" col-md-6 pl-md-1">
+                                <div class="form-group">
+                                    <label> Ending Date </label>
+                                    <input [(ngModel)]="subscriber.endOfSubscription" class="form-control"
+                                           id="endOfSubscription"
+                                           name="endOfSubscription" required
+                                           type="date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" row">
+                            <div class=" col-md-4 pr-md-1">
+                                <div class="form-group">
+                                    <label>Subscriber Id</label>
+                                    <input [(ngModel)]="subscriber.subscriberId" class="form-control"
+                                           id="subscriberId"
+                                           name="subscriberId"
+                                           required
+                                           type="text">
+                                </div>
+                            </div>
+                            <div class=" col-md-4 pl-md-1">
+                                <div class=" form-group">
+                                    <label> Email address </label>
+                                    <input
+                                            [(ngModel)]="subscriber.email"
+                                            class=" form-control"
+                                            placeholder="email address"
+                                            type="email"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" row">
+                            <div class=" col-md-12">
+                                <div class=" form-group">
+                                    <label> Address </label>
+                                    <input
+                                            [(ngModel)]="subscriber.address"
+                                            class=" form-control"
+                                            placeholder="Home Address"
+                                            type="text"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <button  class=" btn btn-fill btn-danger" type="submit">Save</button>
+                    </form>
+                </div>
+                <div class=" card-footer">
+
+                </div>
+            </div>
+        </div>
+        <div class=" col-md-4">
+            <div class=" card card-user">
+                <div class=" card-body">
+                    <p class=" card-text"></p>
+                    <div class=" author">
+                        <div class=" block block-one"></div>
+                        <div class=" block block-two"></div>
+                        <div class=" block block-three"></div>
+                        <div class=" block block-four"></div>
+                        <p class=" description">Subscriber picture</p>
+                        <div *ngIf="webcamImage">
+                            <div class="snapshot">
+                                <img [src]="webcamImage.imageAsDataUrl" class=" avatar" height="300" width="400"/>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div>
+                                <webcam (imageCapture)="handleImage($event)" *ngIf="webcamImage==null"
+                                        [height]="300"
+                                        [trigger]="triggerObservable"
+                                        [width]="400">
+                                </webcam>
+                            </div>
+                            <button (click)="triggerSnapshot();" *ngIf="webcamImage==null" class="btn btn-dark">
+                                take a pic
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

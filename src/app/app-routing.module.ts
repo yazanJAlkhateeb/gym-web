@@ -1,23 +1,52 @@
-import {SubscriberDetailsComponent} from './subscriber-details/subscriber-details.component';
-import {CreateSubscriberComponent} from './create-subscriber/create-subscriber.component';
 import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {BrowserModule} from '@angular/platform-browser';
 import {RouterModule, Routes} from '@angular/router';
-import {SubscribersListComponent} from './subscribers-list/subscribers-list.component';
-import {UpdateSubscriberComponent} from './update-subscriber/update-subscriber.component';
-import {SubscriptionCheckComponent} from "./subscription-check/subscription-check.component";
+
+import {AdminLayoutComponent} from './layouts/admin-layout/admin-layout.component';
+import {AuthLayoutComponent} from './layouts/auth-layout/auth-layout.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'subscriber', pathMatch: 'full'},
-  {path: 'subscribers', component: SubscribersListComponent},
-  {path: 'add', component: CreateSubscriberComponent},
-  {path: 'update/:id', component: UpdateSubscriberComponent},
-  {path: 'details/:id', component: SubscriberDetailsComponent},
-  {path: 'check', component: SubscriptionCheckComponent},
+    {
+        path: '',
+        redirectTo: 'subscribers',
+        pathMatch: 'full'
+    },
+    {
+        path: '',
+        component: AdminLayoutComponent,
+        children: [
+            {
+                path: '',
+                loadChildren:
+                    './layouts/admin-layout/admin-layout.module#AdminLayoutModule'
+            }
+        ]
+    }, {
+        path: '',
+        component: AuthLayoutComponent,
+        children: [
+            {
+                path: '',
+                loadChildren: './layouts/auth-layout/auth-layout.module#AuthLayoutModule'
+            }
+        ]
+    },
+    {
+        path: '**',
+        redirectTo: 'dashboard'
+    }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [
+        CommonModule,
+        BrowserModule,
+        RouterModule.forRoot(routes, {
+            useHash: true
+        })
+    ],
+    exports: [RouterModule]
 })
 export class AppRoutingModule {
 }
