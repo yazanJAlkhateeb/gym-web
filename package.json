@@ -39,7 +39,6 @@
     "angular dashboard freebie",
     "angular admin freebie",
     "angular freebie admin panel",
-    "creative tim",
     "web dashboard",
     "bootstrap 4 dashboard",
     "bootstrap 4",
@@ -52,12 +51,7 @@
     " free admin dashboard",
     "free bootstrap 4 admin dashboard"
   ],
-  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/black-dashboard-angular/issues"
-  },
-  "homepage": "https://demos.creative-tim.com/black-dashboard-angular/#/dashboard",
+  "author": "yazan alkhateeb",
   "private": false,
   "dependencies": {
     "@angular/animations": "10.2.1",
