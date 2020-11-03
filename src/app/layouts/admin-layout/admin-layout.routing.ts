@@ -9,6 +9,7 @@ import {SubscribersListComponent} from '../../pages/subscribers-list/subscribers
 import {CreateSubscriberComponent} from '../../pages/create-subscriber/create-subscriber.component';
 import {UpdateSubscriberComponent} from '../../pages/update-subscriber/update-subscriber.component';
 import {SubscriptionCheckComponent} from '../../pages/subscription-check/subscription-check.component';
+import {SettingsComponent} from "../../pages/settings/settings.component";
 // import { RtlComponent } from "../../pages/rtl/rtl.component";
 
 export const AdminLayoutRoutes: Routes = [
@@ -20,6 +21,7 @@ export const AdminLayoutRoutes: Routes = [
     {path: 'add-subscriber', component: CreateSubscriberComponent},
     {path: 'update-subscriber', component: UpdateSubscriberComponent},
     {path: 'check-subscriber', component: SubscriptionCheckComponent},
+    {path: 'settings', component: SettingsComponent},
     {path: 'typography', component: TypographyComponent},
     // { path: "rtl", component: RtlComponent }
 ];

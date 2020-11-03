@@ -30,6 +30,13 @@ export const ROUTES: RouteInfo[] = [
         icon: 'icon-single-02',
         class: ''
     },
+    {
+        path: '/settings',
+        title: 'Settings',
+        rtlTitle: 'ملف تعريفي للمستخدم',
+        icon: 'icon-settings',
+        class: ''
+    },
     // {
     //     path: '/icons',
     //     title: 'Icons',
@@ -37,13 +44,13 @@ export const ROUTES: RouteInfo[] = [
     //     icon: 'icon-atom',
     //     class: ''
     // },
-    {
-        path: '/notifications',
-        title: 'Notifications',
-        rtlTitle: 'إخطارات',
-        icon: 'icon-bell-55',
-        class: ''
-    },
+    // {
+    //     path: '/notifications',
+    //     title: 'Notifications',
+    //     rtlTitle: 'إخطارات',
+    //     icon: 'icon-bell-55',
+    //     class: ''
+    // },
     // {
     //     path: '/typography',
     //     title: 'Typography',

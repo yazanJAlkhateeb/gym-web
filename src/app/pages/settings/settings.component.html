@@ -1,0 +1,49 @@
+<div class=" content">
+    <div class="row">
+        <div class=" col-md-12">
+            <div class=" card">
+                <div class=" card-header">
+                    <h5 class=" title">Settings</h5></div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4"><p>SlideBar Color</p></div>
+                        <div class="col-md-4">
+                            <div aria-label="Basic example" class="btn-group" role="group">
+                                <button (click)="changeSidebarColor('red')" [ngClass]="{'active':sidebarColor==='red'}"
+                                        class="btn btn-danger" type="button">red
+                                </button>
+                                <button (click)="changeSidebarColor('green')"
+                                        [ngClass]="{'active':sidebarColor==='green'}" class="btn btn-success"
+                                        type="button">green
+                                </button>
+                                <button (click)="changeSidebarColor('blue')"
+                                        [ngClass]="{'active':sidebarColor==='blue'}" class="btn btn-info" type="button">
+                                    blue
+                                </button>
+                                <button (click)="changeSidebarColor('primary')"
+                                        [ngClass]="{'active':sidebarColor==='primary'}" class="btn btn-primary"
+                                        type="button">primary
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4"><p>Dashboard Color</p></div>
+                        <div class="col-md-4">
+                            <div aria-label="Basic example" class="btn-group" role="group">
+                                <button class="btn btn-light" (click)="changeDashboardColor('white-content')"
+                                        type="button">LIGHT MODE
+                                </button>
+                                <button class="btn btn-dark" (click)="changeDashboardColor('black-content')"
+                                        type="button">DARK MODE
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -17,6 +17,7 @@ import {CreateSubscriberComponent} from '../../pages/create-subscriber/create-su
 import {WebcamModule} from 'ngx-webcam';
 import {SubscriptionCheckComponent} from '../../pages/subscription-check/subscription-check.component';
 import {UpdateSubscriberComponent} from '../../pages/update-subscriber/update-subscriber.component';
+import {SettingsComponent} from "../../pages/settings/settings.component";
 
 @NgModule({
     imports: [
@@ -33,6 +34,7 @@ import {UpdateSubscriberComponent} from '../../pages/update-subscriber/update-su
         CreateSubscriberComponent,
         SubscriptionCheckComponent,
         UpdateSubscriberComponent,
+        SettingsComponent,
         IconsComponent,
         TypographyComponent,
         NotificationsComponent,
