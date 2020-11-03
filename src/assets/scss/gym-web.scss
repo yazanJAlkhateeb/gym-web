@@ -1,0 +1,86 @@
+
+@import "gym-web/custom/functions";
+@import "gym-web/bootstrap/functions";
+
+@import "gym-web/custom/variables";
+@import "gym-web/bootstrap/variables";
+
+@import "gym-web/custom/mixins";
+@import "gym-web/bootstrap/mixins";
+
+ // Bootstrap components
+
+@import "gym-web/bootstrap/root";
+@import "gym-web/bootstrap/reboot";
+@import "gym-web/bootstrap/type";
+@import "gym-web/bootstrap/images";
+@import "gym-web/bootstrap/code";
+@import "gym-web/bootstrap/grid";
+@import "gym-web/bootstrap/tables";
+@import "gym-web/bootstrap/forms";
+@import "gym-web/bootstrap/buttons";
+@import "gym-web/bootstrap/transitions";
+@import "gym-web/bootstrap/dropdown";
+@import "gym-web/bootstrap/button-group";
+@import "gym-web/bootstrap/input-group";
+@import "gym-web/bootstrap/custom-forms";
+@import "gym-web/bootstrap/nav";
+@import "gym-web/bootstrap/navbar";
+@import "gym-web/bootstrap/card";
+@import "gym-web/bootstrap/breadcrumb";
+@import "gym-web/bootstrap/pagination";
+@import "gym-web/bootstrap/badge";
+@import "gym-web/bootstrap/jumbotron";
+@import "gym-web/bootstrap/alert";
+@import "gym-web/bootstrap/progress";
+@import "gym-web/bootstrap/media";
+@import "gym-web/bootstrap/list-group";
+@import "gym-web/bootstrap/close";
+@import "gym-web/bootstrap/modal";
+@import "gym-web/bootstrap/tooltip";
+@import "gym-web/bootstrap/popover";
+@import "gym-web/bootstrap/carousel";
+@import "gym-web/bootstrap/utilities";
+@import "gym-web/bootstrap/print";
+
+ // Custom components
+
+ @import "gym-web/custom/alerts.scss";
+ @import "gym-web/custom/buttons.scss";
+ @import "gym-web/custom/dropdown.scss";
+ @import "gym-web/custom/footer.scss";
+ @import "gym-web/custom/forms.scss";
+ @import "gym-web/custom/images.scss";
+ @import "gym-web/custom/modal.scss";
+ @import "gym-web/custom/navbar.scss";
+ @import "gym-web/custom/type.scss";
+ @import "gym-web/custom/tables";
+ @import "gym-web/custom/checkboxes-radio";
+ @import "gym-web/custom/fixed-plugin";
+ @import "gym-web/custom/sidebar-and-main-panel.scss";
+ @import "gym-web/custom/misc.scss";
+ @import "gym-web/custom/rtl.scss";
+ @import "gym-web/custom/input-group.scss";
+
+
+ // Vendor / Plugins
+
+@import "gym-web/custom/vendor/plugin-perfect-scrollbar.scss";
+@import "gym-web/custom/vendor/plugin-animate-bootstrap-notify.scss";
+
+// light mode
+
+@import "gym-web/custom/white-content.scss";
+
+// Cards
+
+@import 'gym-web/custom/card';
+@import "gym-web/custom/cards/card-chart";
+@import "gym-web/custom/cards/card-map";
+@import "gym-web/custom/cards/card-user";
+@import "gym-web/custom/cards/card-task";
+@import "gym-web/custom/cards/card-plain";
+
+// Angular Differences
+
+@import "gym-web/angular-differences/angular-differences";
