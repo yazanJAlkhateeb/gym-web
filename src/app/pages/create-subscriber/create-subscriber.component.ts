@@ -19,6 +19,7 @@ export class CreateSubscriberComponent implements OnInit {
     constructor(private subscriberService: SubscriberService,
                 private router: Router,
                 private toastr: ToastrService) {
+        this.webcamImage==null;
     }
 
     public get triggerObservable(): Observable<void> {
@@ -44,11 +45,11 @@ export class CreateSubscriberComponent implements OnInit {
 
     onSubmit() {
         if (this.webcamImage == null) {
-            this.toastr.success('<span class="tim-icons icon-bell-55" [data-notify]="icon"></span> Welcome to <b>Black Dashboard Angular</b> - a beautiful freebie for every web developer.', '', {
+            this.toastr.success('<span class="tim-icons icon-bell-55" [data-notify]="icon"></span> Please get Picture for the subscriber', '', {
                 disableTimeOut: true,
                 enableHtml: true,
                 closeButton: true,
-                toastClass: 'alert alert-danger alert-with-icon',
+                toastClass: 'alert alert-info alert-with-icon',
                 positionClass: 'toast-' + 'top' + '-' + 'center'
             });
         }

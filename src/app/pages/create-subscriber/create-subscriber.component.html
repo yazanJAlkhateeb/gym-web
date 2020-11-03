@@ -99,13 +99,10 @@
                     <p class=" card-text"></p>
                     <div class=" author">
                         <div class=" block block-one"></div>
-                        <div class=" block block-two"></div>
-                        <div class=" block block-three"></div>
-                        <div class=" block block-four"></div>
                         <p class=" description">Subscriber picture</p>
                         <div *ngIf="webcamImage">
                             <div class="snapshot">
-                                <img [src]="webcamImage.imageAsDataUrl" class=" avatar" height="300" width="400"/>
+                                <img [src]="webcamImage.imageAsDataUrl" height="200" width="250"/>
                             </div>
                         </div>
                         <div class="column">

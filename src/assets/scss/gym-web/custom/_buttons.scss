@@ -106,6 +106,12 @@
 .btn-primary { @include btn-styles($primary, $primary-states);
 
               }
+.btn-black {
+  @include btn-styles($black, $black-states);
+}
+.btn-light {
+  @include btn-styles($light, $light);
+}
 .btn-success { @include btn-styles($success, $success-states);
 
               }

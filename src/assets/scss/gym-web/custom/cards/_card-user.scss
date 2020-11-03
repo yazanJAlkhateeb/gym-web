@@ -18,7 +18,7 @@
           height: 100px;
           width: 250px;
           &.block-one {
-            @include linear-gradient-right(rgba($primary,0.6), rgba($primary,0));
+            @include linear-gradient-right(rgba($danger,0.6), rgba($danger,0));
             @include nc-rotate(150deg,10);
             margin-top: -90px;
             margin-left: -50px;
