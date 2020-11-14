@@ -12,8 +12,8 @@ import {SubscriberService} from '../../gym-api/subscriber.service';
 export class SubscribersListComponent implements OnInit {
   subscribers: Observable<Subscriber[]>;
 
-  constructor(private subscriberService: SubscriberService,
-              private router: Router) {
+  constructor(public subscriberService: SubscriberService,
+              public router: Router) {
   }
 
   ngOnInit() {
@@ -39,11 +39,8 @@ export class SubscribersListComponent implements OnInit {
 
   }
 
-  subscriberDetails(id: number) {
-    this.router.navigate(['details', id]);
-  }
 
   updateSubscriber(id: number) {
-    this.router.navigate(['update', id]);
+    this.router.navigate(['update-subscriber', {id:id}]);
   }
 }

@@ -18,6 +18,8 @@ import {WebcamModule} from 'ngx-webcam';
 import {SubscriptionCheckComponent} from '../../pages/subscription-check/subscription-check.component';
 import {UpdateSubscriberComponent} from '../../pages/update-subscriber/update-subscriber.component';
 import {SettingsComponent} from "../../pages/settings/settings.component";
+import {CreateSubscriberMeasurementsComponent} from "../../pages/create-subscriber-measurements/create-subscriber-measurements.component";
+import {SubscriberMeasurementComponent} from "../../pages/subscriber-measurement/subscriber-measurement.component";
 
 @NgModule({
     imports: [
@@ -34,6 +36,8 @@ import {SettingsComponent} from "../../pages/settings/settings.component";
         CreateSubscriberComponent,
         SubscriptionCheckComponent,
         UpdateSubscriberComponent,
+        CreateSubscriberMeasurementsComponent,
+        SubscriberMeasurementComponent,
         SettingsComponent,
         IconsComponent,
         TypographyComponent,

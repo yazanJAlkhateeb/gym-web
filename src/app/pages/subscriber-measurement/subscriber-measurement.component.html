@@ -1,0 +1,77 @@
+<div class=" content">
+    <div class=" row">
+        <div class=" col-md-12">
+            <div class=" card">
+                <div class=" card-header">
+                    <h5 class=" title">Subscriber Measurement</h5></div>
+                <div class=" card-body">
+                    <form (ngSubmit)="find(subscriberId)">
+                    <div class="form-group">
+                        <label>subscriber Id</label>
+                        <input [(ngModel)]="subscriberId" class="form-control" id="subscriberId" name="subscriberId"
+                               required type="text">
+                    </div>
+                    <button (click)="find(subscriberId)" class="btn btn-dark" style="width: 200px;">Submit</button>
+                    </form>
+                </div>
+                <div *ngIf="subscriber" class="card-footer">
+                    <div class=" row">
+                        <div class=" col-md-12">
+                            <div class=" card">
+                                <div class=" card-header">
+                                    <div class=" row">
+                                        <div class=" col-md-9"><h4 class=" card-title">Subscriber Measurement
+                                            Records</h4></div>
+                                        <div class=" col-md-2">
+                                            <button (click)="newRecord(subscriberId)" class="btn btn-dark"
+                                                    style="width: 200px; ">new
+                                                record
+                                            </button>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class=" card-body">
+                                    <div class=" table-responsive">
+                                        <table class=" table tablesorter" id="">
+                                            <thead class=" text-primary">
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Date</th>
+                                                <th scope="col">Height</th>
+                                                <th scope="col">Weight</th>
+                                                <th scope="col">Chest</th>
+                                                <th scope="col">Shoulders</th>
+                                                <th scope="col">Arms</th>
+                                                <th scope="col">Stomach</th>
+                                                <th scope="col">Pelvis</th>
+                                                <th scope="col">Thigh</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr *ngFor="let subscriberMeasurementss of subscriberMeasurements">
+                                                <td>{{subscriberMeasurementss.id}}</td>
+                                                <td>{{subscriberMeasurementss.date}}</td>
+                                                <td>{{subscriberMeasurementss.height}}</td>
+                                                <td>{{subscriberMeasurementss.weight}}</td>
+                                                <td>{{subscriberMeasurementss.chest}}</td>
+                                                <td>{{subscriberMeasurementss.shoulders}}</td>
+                                                <td>{{subscriberMeasurementss.arms}}</td>
+                                                <td>{{subscriberMeasurementss.stomach}}</td>
+                                                <td>{{subscriberMeasurementss.pelvis}}</td>
+                                                <td>{{subscriberMeasurementss.thigh}}</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

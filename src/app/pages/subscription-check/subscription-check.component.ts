@@ -21,9 +21,13 @@ export class SubscriptionCheckComponent implements OnInit {
 
   ngOnInit() {
   }
+  today(endOfSubscription: string) {
+    return Date.parse(endOfSubscription)> Date.now();
 
+  }
   onSubmit() {
     this.find();
+    this.subscriberId=null;
   }
 
   find() {

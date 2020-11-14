@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SettingsComponent implements OnInit {
 
-  public sidebarColor: string = "red";
+  public sidebarColor: string = "blue";
 
   constructor() {}
   changeSidebarColor(color){

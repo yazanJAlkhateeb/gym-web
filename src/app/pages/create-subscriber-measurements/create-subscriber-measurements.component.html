@@ -1,0 +1,127 @@
+<div class=" content">
+    <div class=" row">
+        <div class=" col-md-12">
+            <div class=" card">
+                <div class=" card-header">
+                    <h5 class=" title">Create Subscriber Measurement</h5>
+                </div>
+                <div class=" card-body">
+                    <form (ngSubmit)="onSubmit()">
+                        <div class=" row">
+                            <div class=" col-md-4 pr-md-1">
+                                <div class="form-group">
+                                    <label> subscriber Id </label>
+                                    <input [(ngModel)]="subscriberMeasurements.subscriberId" class="form-control" id="subscriberId"
+                                           name="subscriberId"
+                                           disabled
+                                           type="text">
+                                </div>
+                            </div>
+                            <div class=" col-md-5 pr-md-1">
+                                <div class="form-group">
+                                    <label> record Date </label>
+                                    <input [(ngModel)]="subscriberMeasurements.date" class="form-control" id="date"
+                                           name="date"
+                                           required
+                                           type="Date">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" row">
+                            <div class=" col-md-6 pr-md-1">
+                                <div class=" form-group">
+                                    <label> height </label>
+                                    <input [(ngModel)]="subscriberMeasurements.height" class="form-control"
+                                           id="height"
+                                           name="height"
+                                           required
+                                           type="text">
+                                </div>
+                            </div>
+                            <div class=" col-md-6 pl-md-1">
+                                <div class="form-group">
+                                    <label> weight </label>
+                                    <input [(ngModel)]="subscriberMeasurements.weight" class="form-control"
+                                           id="weight"
+                                           name="weight"
+                                           required
+                                           type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" row">
+                            <div class=" col-md-6 pr-md-1">
+                                <div class=" form-group">
+                                    <label> chest </label>
+                                    <input [(ngModel)]="subscriberMeasurements.chest" class="form-control"
+                                           id="chest"
+                                           name="chest"
+                                           required
+                                           type="text">
+                                </div>
+                            </div>
+                            <div class=" col-md-6 pl-md-1">
+                                <div class="form-group">
+                                    <label> shoulders </label>
+                                    <input [(ngModel)]="subscriberMeasurements.shoulders" class="form-control"
+                                           id="shoulders"
+                                           name="shoulders"
+                                           required
+                                           type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" row">
+                            <div class=" col-md-6 pr-md-1">
+                                <div class=" form-group">
+                                    <label> arms </label>
+                                    <input [(ngModel)]="subscriberMeasurements.arms" class="form-control"
+                                           id="arms"
+                                           name="arms"
+                                           required
+                                           type="text">
+                                </div>
+                            </div>
+                            <div class=" col-md-6 pl-md-1">
+                                <div class="form-group">
+                                    <label> stomach </label>
+                                    <input [(ngModel)]="subscriberMeasurements.stomach" class="form-control"
+                                           id="stomach"
+                                           name="stomach"
+                                           required
+                                           type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" row">
+                            <div class=" col-md-6 pr-md-1">
+                                <div class=" form-group">
+                                    <label> pelvis </label>
+                                    <input [(ngModel)]="subscriberMeasurements.pelvis" class="form-control"
+                                           id="pelvis"
+                                           name="pelvis"
+                                           required
+                                           type="text">
+                                </div>
+                            </div>
+                            <div class=" col-md-6 pl-md-1">
+                                <div class="form-group">
+                                    <label> thigh </label>
+                                    <input [(ngModel)]="subscriberMeasurements.thigh" class="form-control"
+                                           id="thigh"
+                                           name="thigh"
+                                           required
+                                           type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <button class=" btn btn-fill btn-danger" type="submit">Save</button>
+                    </form>
+                </div>
+                <div class=" card-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

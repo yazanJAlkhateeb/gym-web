@@ -3,7 +3,7 @@
     <div class=" col-md-12">
       <div class=" card">
         <div class=" card-header">
-          <h4 class=" card-title">Subscribers List</h4>
+          <h4 class=" card-title" i18n>Subscribers List </h4>
         </div>
         <div class=" card-body">
           <div class=" table-responsive">
@@ -11,32 +11,29 @@
               <thead class=" text-primary">
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Name</th>
                 <th scope="col">subscriber Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Phone Number</th>
                 <th scope="col">Starting Date</th>
                 <th scope="col">Ending Date</th>
-                <th>Status</th>
-<!--                <th>pic</th>-->
+                <th scope="col">Status</th>
                 <th scope="col">Actions</th>
               </tr>
               </thead>
               <tbody>
               <tr *ngFor="let subscriber of subscribers | async">
                 <td>{{subscriber.id}}</td>
-                <td>{{subscriber.firstName}}</td>
                 <td>{{subscriber.subscriberId}}</td>
+                <td>{{subscriber.name}}</td>
+                <td>{{subscriber.phoneNumber}}</td>
                 <td>{{subscriber.startOfSubscription}}</td>
                 <td>{{subscriber.endOfSubscription}}</td>
                 <td *ngIf="today(subscriber.endOfSubscription);then active else notActive"></td>
-                <ng-template #active><span class="badge badge-success" style="margin-top: 30px;height: 30px;width: 70px;">Active</span></ng-template>
-                <ng-template #notActive><span class="badge badge-danger" style="margin-top: 30px;height: 30px;width: 70px">Not Active</span></ng-template>
-<!--                <td>-->
-<!--                  <img src="{{subscriber.image}}"width="200" height="200">-->
-<!--                </td>-->
+                <ng-template #active><td><a class="text-success">Active</a></td></ng-template>
+                <ng-template #notActive><td><a class="text-danger" >Not Active</a></td></ng-template>
                 <td>
                   <button (click)="deleteSubscriber(subscriber.id)" class="btn btn-danger">Delete</button>
-                  <button (click)="updateSubscriber(subscriber.id)" class="btn btn-info" style="margin-left: 10px">Update
-                  </button>
+                  <button (click)="updateSubscriber(subscriber.id)" class="btn btn-info">Update</button>
                 </td>
               </tr>
               </tbody>

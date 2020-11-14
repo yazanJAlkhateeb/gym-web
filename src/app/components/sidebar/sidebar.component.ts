@@ -30,6 +30,14 @@ export const ROUTES: RouteInfo[] = [
         icon: 'icon-single-02',
         class: ''
     },
+
+    {
+        path: '/subscriber-measurement',
+        title: 'Subscriber Measurement',
+        rtlTitle: 'ملف تعريفي للمستخدم',
+        icon: 'icon-notes',
+        class: ''
+    },
     {
         path: '/settings',
         title: 'Settings',

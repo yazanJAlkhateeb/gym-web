@@ -1,7 +1,6 @@
 export class Subscriber {
   id: number;
-  firstName: string;
-  lastName: string;
+  name: string;
   email: string;
   phoneNumber: string;
   address: string;
