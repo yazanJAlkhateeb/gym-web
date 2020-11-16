@@ -62,11 +62,20 @@
                             </div>
                         </div>
                         <div class=" row" style="margin-top: 20px">
-                            <div class=" col-md-12">
+                            <div class=" col-md-6">
                                 <div class=" form-group">
                                     <p *ngIf="today(subscriber.endOfSubscription);then active else notActive"></p>
                                     <ng-template #active><p>status :<a class="text-success"> Active</a></ng-template>
                                     <ng-template #notActive><p>status :<a class="text-danger"> Not Active</a>
+                                    </ng-template>
+                                </div>
+                            </div>
+                            <div class=" col-md-6">
+                                <div class=" form-group">
+                                    <p *ngIf="paid(subscriber.totalSubscriptionAmount,subscriber.paidSubscriptionAmount)>0;then notPaidAll else paidAll"></p>
+                                    <ng-template #notPaidAll><p>status :<a class="text-danger">
+                                        {{paid(subscriber.totalSubscriptionAmount,subscriber.paidSubscriptionAmount)}} JOD Must be Paid!</a></ng-template>
+                                    <ng-template #paidAll><p>status :<a class="text-success"> no amount to be paid</a>
                                     </ng-template>
                                 </div>
                             </div>

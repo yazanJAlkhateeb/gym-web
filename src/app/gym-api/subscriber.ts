@@ -7,5 +7,7 @@ export class Subscriber {
   subscriberId: string;
   startOfSubscription: string;
   endOfSubscription: string;
+  totalSubscriptionAmount: number;
+  paidSubscriptionAmount: number;
   image: string;
 }

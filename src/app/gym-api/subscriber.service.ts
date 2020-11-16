@@ -21,7 +21,7 @@ export class SubscriberService {
     return this.http.post(`${this.baseUrl}/create-subscriber`, subscriber);
   }
 
-  updateSubscriber(id: number, value: any): Observable<Object> {
+  updateSubscriber(id: number, value: any) {
     return this.http.put(`${this.baseUrl}/update-subscriber/${id}`, value);
   }
 

@@ -24,7 +24,8 @@ export class NotificationsComponent implements OnInit {
 
         switch (color) {
             case 1:
-                this.toastr.info('<span class="tim-icons icon-bell-55" [data-notify]="icon"></span> Welcome to <b>Black Dashboard Angular</b> - a beautiful freebie for every web developer.', '', {
+                this.toastr.info('<span class="tim-icons icon-bell-55" [data-notify]="icon">' +
+                    '</span> Welcome to <b>Black Dashboard Angular</b> - a beautiful freebie for every web developer.', '', {
                     disableTimeOut: true,
                     closeButton: true,
                     enableHtml: true,

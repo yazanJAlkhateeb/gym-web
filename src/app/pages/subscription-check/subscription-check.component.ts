@@ -4,39 +4,45 @@ import {Subscriber} from '../../gym-api/subscriber';
 import {SubscriberService} from '../../gym-api/subscriber.service';
 
 @Component({
-  selector: 'app-subscription-check',
-  templateUrl: './subscription-check.component.html',
-  styleUrls: ['./subscription-check.component.css']
+    selector: 'app-subscription-check',
+    templateUrl: './subscription-check.component.html',
+    styleUrls: ['./subscription-check.component.css']
 })
 export class SubscriptionCheckComponent implements OnInit {
 
-  id: number;
-  subscriber: Subscriber;
-  subscriberId: string = String();
+    id: number;
+    subscriber: Subscriber;
+    subscriberId: string = String();
 
-  constructor(private route: ActivatedRoute,
-              private router: Router,
-              private subscriberService: SubscriberService) {
-  }
+    constructor(private route: ActivatedRoute,
+                private router: Router,
+                private subscriberService: SubscriberService) {
+    }
 
-  ngOnInit() {
-  }
-  today(endOfSubscription: string) {
-    return Date.parse(endOfSubscription)> Date.now();
+    ngOnInit() {
+    }
 
-  }
-  onSubmit() {
-    this.find();
-    this.subscriberId=null;
-  }
+    today(endOfSubscription: string) {
+        return Date.parse(endOfSubscription) > Date.now();
+    }
 
-  find() {
-    this.subscriberService
-      .getSubscriberBySubscriberId(this.subscriberId).subscribe(data => {
-        console.log(data);
-        this.subscriber = data;
-      },
-      error => console.log(error));
-  }
+    paid(totalAmount: number, paidAmount: number) {
+        return totalAmount - paidAmount;
+
+    }
+
+    onSubmit() {
+        this.find();
+        this.subscriberId = null;
+    }
+
+    find() {
+        this.subscriberService
+            .getSubscriberBySubscriberId(this.subscriberId).subscribe(data => {
+                console.log(data);
+                this.subscriber = data;
+            },
+            error => console.log(error));
+    }
 
 }
