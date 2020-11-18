@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en-US" datatype="plaintext" original="ng2.template">
+        <body>
+            <trans-unit id="a7da6b0675efd8450da87e3a2467a899c1b26b67" datatype="html">
+                <source>Subscribers List</source>
+                <target>قائمة المشتركين</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscribers-list/subscribers-list.component.html
+                    </context>
+                    <context context-type="linenumber">6</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="fc8e4b60fa0b9ebaa9aa011deb1e3f79b39d5e4e" datatype="html">
+                <source>subscriber Id</source>
+                <target>رقم المشترك</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscribers-list/subscribers-list.component.html
+                    </context>
+                    <context context-type="linenumber">14</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscription-check/subscription-check.component.html
+                    </context>
+                    <context context-type="linenumber">10</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/subscriber-measurement/subscriber-measurement.component.html
+                    </context>
+                    <context context-type="linenumber">10</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="cff1428d10d59d14e45edec3c735a27b5482db59" datatype="html">
+                <source>Name</source>
+                <target>الاسم</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscribers-list/subscribers-list.component.html
+                    </context>
+                    <context context-type="linenumber">15</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="db654f91d847f34e71ffb99268ff3a1807913421" datatype="html">
+                <source>Phone Number</source>
+                <target>رقم الهاتف</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscribers-list/subscribers-list.component.html
+                    </context>
+                    <context context-type="linenumber">16</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/create-subscriber/create-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">57</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/update-subscriber/update-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">60</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="56734adfec166f5df0907ea7f5a1af3e4b5e366f" datatype="html">
+                <source>Starting Date</source>
+                <target>تاريخ بداية الاستراك</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscribers-list/subscribers-list.component.html
+                    </context>
+                    <context context-type="linenumber">17</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="d3fcf0f3d55f76a26cf229556bff28b70c4ce523" datatype="html">
+                <source>Ending Date</source>
+                <target>تاريخ نهاية الاشتراك</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscribers-list/subscribers-list.component.html
+                    </context>
+                    <context context-type="linenumber">18</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="81b97b8ea996ad1e4f9fca8415021850214884b1" datatype="html">
+                <source>Status</source>
+                <target>الحالة</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscribers-list/subscribers-list.component.html
+                    </context>
+                    <context context-type="linenumber">19</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="030b4423b92167200e39519599f9b863b4f7c62c" datatype="html">
+                <source>Actions</source>
+                <target>تغيرات</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscribers-list/subscribers-list.component.html
+                    </context>
+                    <context context-type="linenumber">20</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="3cad5c30f6bd12ba5fc9ed6a50090f4db802df38" datatype="html">
+                <source>Create Subscriber</source>
+                <target>انشاء مشترك</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/create-subscriber/create-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">6</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="47ad2495e84a23438d88dde701aec635518ca964" datatype="html">
+                <source>Subscriber Id</source>
+                <target>رقم المشترك</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/create-subscriber/create-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">13</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/update-subscriber/update-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">13</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="741c3cdf60b7030f200cb824a29d3490b9297217" datatype="html">
+                <source>Starting Date</source>
+                <target>تاريخ بداية الاشتراك</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/create-subscriber/create-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">25</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/update-subscriber/update-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">26</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="b86b37ed717b62cf416faa46cfc8194a5883dcb9" datatype="html">
+                <source>Ending Date</source>
+                <target>تاريخ نهاية الاشتراك</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/create-subscriber/create-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">34</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/update-subscriber/update-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">36</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="20371277706eedf7fd8a3f51633ca5d801cd4fc2" datatype="html">
+                <source>Name</source>
+                <target>الاسم</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/create-subscriber/create-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">45</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/update-subscriber/update-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">48</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="b17019cea30a7e400b70772f73ad909eb0cf66cc" datatype="html">
+                <source>Email address</source>
+                <target>الايميل</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/create-subscriber/create-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">68</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/update-subscriber/update-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">71</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="e9ded9ddc67d3d863a5484c81550ee0de9b0ff04" datatype="html">
+                <source>Address</source>
+                <target>موقع المنزل</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/create-subscriber/create-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">80</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/update-subscriber/update-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">83</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="93f1e1acf34635817c5f44e497895ab6d43ada13" datatype="html">
+                <source>Total Subscription Amount</source>
+                <target>مبلغ الاشتراك</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/create-subscriber/create-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">92</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/update-subscriber/update-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">95</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="c5c4221c81934f2b6686ace9597160dcb404c162" datatype="html">
+                <source>Paid Subscription Amount</source>
+                <target>المدفوع من الاشتراك</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/create-subscriber/create-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">101</context>
+                </context-group>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/update-subscriber/update-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">105</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="9c5a75ae4782e10cf0829ad54b20a5907718058a" datatype="html">
+                <source>Check Subscriber</source>
+                <target>التحقق من المشترك</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscription-check/subscription-check.component.html
+                    </context>
+                    <context context-type="linenumber">6</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="6b2d937a84a18e6e4778dd00eaeeac746a0395a7" datatype="html">
+                <source>Subscriber Id :
+                    <x id="INTERPOLATION" equiv-text="{{subscriber.subscriberId}}"/>
+                </source>
+                <target><x id="INTERPOLATION" equiv-text="{{subscriber.subscriberId}}"/>  :  رقم المشترك    </target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscription-check/subscription-check.component.html
+                    </context>
+                    <context context-type="linenumber">22</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="222e4b7ba783664dbb3c0c827dd46316d405ac67" datatype="html">
+                <source>Name :
+                    <x id="INTERPOLATION" equiv-text="{{subscriber.name}}"/>
+                </source>
+                <target>    الاسم : <x id="INTERPOLATION" equiv-text="{{subscriber.name}}"/> </target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscription-check/subscription-check.component.html
+                    </context>
+                    <context context-type="linenumber">29</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="f8f4752b2377c2e7dcc403f44d1f1be7dfcbc1be" datatype="html">
+                <source>Starting Date :
+                    <x id="INTERPOLATION" equiv-text="{{subscriber.startOfSubscription}}"/>
+                </source>
+                <target>  <x id="INTERPOLATION" equiv-text="{{subscriber.startOfSubscription}}"/>   : تاريخ بداية الاشتراك  </target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscription-check/subscription-check.component.html
+                    </context>
+                    <context context-type="linenumber">36</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="49570efbf3cc5436d04c41449a07589df80ba957" datatype="html">
+                <source>Ending Date :
+                    <x id="INTERPOLATION" equiv-text="{{subscriber.endOfSubscription}}"/>
+                </source>
+                <target><x id="INTERPOLATION" equiv-text="{{subscriber.endOfSubscription}}"/>   :  تاريخ نهاية الاشتراك  </target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscription-check/subscription-check.component.html
+                    </context>
+                    <context context-type="linenumber">41</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="db6f31359e565ff6a73be50f5735801e4b57ec7f" datatype="html">
+                <source>Email address :
+                    <x id="INTERPOLATION" equiv-text="{{subscriber.email}}"/>
+                </source>
+                <target>  <x id="INTERPOLATION" equiv-text="{{subscriber.email}}"/>  : الايميل </target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscription-check/subscription-check.component.html
+                    </context>
+                    <context context-type="linenumber">48</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="b80c026d007253d0def52307340382cfe6f57ea1" datatype="html">
+                <source>Phone Number :
+                    <x id="INTERPOLATION" equiv-text="{{subscriber.phoneNumber}}"/>
+                </source>
+                <target> <x id="INTERPOLATION" equiv-text="{{subscriber.phoneNumber}}"/>: رقم الهاتف
+
+                </target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscription-check/subscription-check.component.html
+                    </context>
+                    <context context-type="linenumber">53</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="5ec08079d71132463046f5cd98fccc6b4718204f" datatype="html">
+                <source>Address :
+                    <x id="INTERPOLATION" equiv-text="{{subscriber.address}}"/>
+                </source>
+                <target>  موقع المنزل : <x id="INTERPOLATION" equiv-text="{{subscriber.address}}"/></target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscription-check/subscription-check.component.html
+                    </context>
+                    <context context-type="linenumber">60</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="3f7dd86b626d127380682a2bab15fea793ebc240" datatype="html">
+                <source>status :
+                    <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>
+                    Active
+                    <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+                </source>
+                <target>الحالة : فعال</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscription-check/subscription-check.component.html
+                    </context>
+                    <context context-type="linenumber">68</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="aa84013bbd4f9f5736cc159ebc12d8ab407335a6" datatype="html">
+                <source>status :
+                    <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>
+                    Not Active
+                    <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+                </source>
+                <target>الحالة : غير فعال </target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscription-check/subscription-check.component.html
+                    </context>
+                    <context context-type="linenumber">69</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="021d07a6606c6f7014de342ea7c0203f4099bf4b" datatype="html">
+                <source>status :
+                    <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>
+                    <x id="INTERPOLATION"
+                       equiv-text="{{paid(subscriber.totalSubscriptionAmount,subscriber.paidSubscriptionAmount)}}"/>
+                    JOD Must be Paid!
+                    <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+                </source>
+                <target>من مبلغ الاشتراك <x id="INTERPOLATION"
+                           equiv-text="{{paid(subscriber.totalSubscriptionAmount,subscriber.paidSubscriptionAmount)}}"/>:الحالة المالية  باقي
+
+
+                </target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscription-check/subscription-check.component.html
+                    </context>
+                    <context context-type="linenumber">76</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="c981fd423796fda7c20653e254e6460df63968d3" datatype="html">
+                <source>status :
+                    <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>
+                    no amount to be paid
+                    <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+                </source>
+                <target> الحالة المالية : قيمة الاشتراك مسددة </target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/subscription-check/subscription-check.component.html
+                    </context>
+                    <context context-type="linenumber">78</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="a1e87c1dc6cc387049c619c4855937359fb8bd9b" datatype="html">
+                <source>Update Subscriber</source>
+                <target>تعديل المشترك</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/update-subscriber/update-subscriber.component.html
+                    </context>
+                    <context context-type="linenumber">6</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="52d4413a248b7d8e8d9ae8f93139b1ecfc16277c" datatype="html">
+                <source>Create Subscriber Measurement</source>
+                <target>انشاء قياسات مشترك</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/create-subscriber-measurements/create-subscriber-measurements.component.html
+                    </context>
+                    <context context-type="linenumber">6</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="ff05ad76cb553fbf7256aa7cc32724bec97dbcb8" datatype="html">
+                <source>subscriber Id</source>
+                <target>رقم المشترك</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/create-subscriber-measurements/create-subscriber-measurements.component.html
+                    </context>
+                    <context context-type="linenumber">13</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="ed62f2fa9d1eb1cbac07b0d9bcb77379fb1ac323" datatype="html">
+                <source>record Date</source>
+                <target>تاريخ القرائة</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/create-subscriber-measurements/create-subscriber-measurements.component.html
+                    </context>
+                    <context context-type="linenumber">22</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="7bcd1699c1f9e96a4c7fc387a32ba74117923254" datatype="html">
+                <source>height</source>
+                <target>الطول</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/create-subscriber-measurements/create-subscriber-measurements.component.html
+                    </context>
+                    <context context-type="linenumber">33</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="5f28872c90ef7df2c5c048976ed9b2fa3fca9a34" datatype="html">
+                <source>weight</source>
+                <target>الوزن</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/create-subscriber-measurements/create-subscriber-measurements.component.html
+                    </context>
+                    <context context-type="linenumber">43</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="3d529fe935fd3905033754583ae719cac5979a3e" datatype="html">
+                <source>chest</source>
+                <target>الصدر</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/create-subscriber-measurements/create-subscriber-measurements.component.html
+                    </context>
+                    <context context-type="linenumber">55</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="be09b9c1422c3434e836530028d72e9e5c6d915b" datatype="html">
+                <source>shoulders</source>
+                <target>الاكتاف</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/create-subscriber-measurements/create-subscriber-measurements.component.html
+                    </context>
+                    <context context-type="linenumber">65</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="ec1510625b6e3029dc6d534a4307c6499fee8606" datatype="html">
+                <source>arms</source>
+                <target>الاذرع</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/create-subscriber-measurements/create-subscriber-measurements.component.html
+                    </context>
+                    <context context-type="linenumber">77</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="32f0935abc4129b310f85f230f4281e88ee2a92a" datatype="html">
+                <source>stomach</source>
+                <target>المعدة</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/create-subscriber-measurements/create-subscriber-measurements.component.html
+                    </context>
+                    <context context-type="linenumber">87</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="1eb84f2dafbe2562e8c6d79b4b60c0c694bfa978" datatype="html">
+                <source>pelvis</source>
+                <target>الحوض</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/create-subscriber-measurements/create-subscriber-measurements.component.html
+                    </context>
+                    <context context-type="linenumber">99</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="766a1fad101b1ab3d147509eace2bd72f3c389e4" datatype="html">
+                <source>thigh</source>
+                <target>الفخد</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/create-subscriber-measurements/create-subscriber-measurements.component.html
+                    </context>
+                    <context context-type="linenumber">109</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="4d433302aed12a2ac33992fb684a6894b093e7f7" datatype="html">
+                <source>Subscriber Measurement</source>
+                <target>قياسات المشتركين</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/subscriber-measurement/subscriber-measurement.component.html
+                    </context>
+                    <context context-type="linenumber">6</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="d673a87e6c7d343549b8fd48f86eadf4315b19dd" datatype="html">
+                <source>Subscriber Measurement Records</source>
+                <target>قياسات المشتركين</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/subscriber-measurement/subscriber-measurement.component.html
+                    </context>
+                    <context context-type="linenumber">23</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="2f933b826a570836cab04f683970a2d22068458c" datatype="html">
+                <source>Date</source>
+                <target>تاريخ</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/subscriber-measurement/subscriber-measurement.component.html
+                    </context>
+                    <context context-type="linenumber">41</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="179eb5c4a21ad324f75f723218a621d120e39d30" datatype="html">
+                <source>Height</source>
+                <target>الطول</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/subscriber-measurement/subscriber-measurement.component.html
+                    </context>
+                    <context context-type="linenumber">42</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="919f2fd60a898850c24b1584362bbf18a4628bcb" datatype="html">
+                <source>Weight</source>
+                <target>الوزن</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/subscriber-measurement/subscriber-measurement.component.html
+                    </context>
+                    <context context-type="linenumber">43</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="29b25bbcb2abaf0eae851c0f4284b38aac905160" datatype="html">
+                <source>Chest</source>
+                <target>الصدر</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/subscriber-measurement/subscriber-measurement.component.html
+                    </context>
+                    <context context-type="linenumber">44</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="a2c8fa00793cd43a2b72d8861f85ac090978df61" datatype="html">
+                <source>Shoulders</source>
+                <target>الاكتاف</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/subscriber-measurement/subscriber-measurement.component.html
+                    </context>
+                    <context context-type="linenumber">45</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="3721cfdf3d5aadacf2680e26245a39396e8f8adc" datatype="html">
+                <source>Arms</source>
+                <target>الاذرع</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/subscriber-measurement/subscriber-measurement.component.html
+                    </context>
+                    <context context-type="linenumber">46</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="084eb4971dff4375ba3356908f29bf30289bb30f" datatype="html">
+                <source>Stomach</source>
+                <target>المعدة</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/subscriber-measurement/subscriber-measurement.component.html
+                    </context>
+                    <context context-type="linenumber">47</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="a445554c9eb3bfa6be06c6a92eb847875a99d5b1" datatype="html">
+                <source>Pelvis</source>
+                <target>الحوض</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/subscriber-measurement/subscriber-measurement.component.html
+                    </context>
+                    <context context-type="linenumber">48</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="be8d55d890d04944177a481470eb487922993b7b" datatype="html">
+                <source>Thigh</source>
+                <target>الفخد</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">
+                        app/pages/subscriber-measurement/subscriber-measurement.component.html
+                    </context>
+                    <context context-type="linenumber">49</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="121cc5391cd2a5115bc2b3160379ee5b36cd7716" datatype="html">
+                <source>Settings</source>
+                <target>الاعدادات</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/settings/settings.component.html</context>
+                    <context context-type="linenumber">6</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="7f1d0b1838c82dafd6017fb01fa150eb1f2b9e24" datatype="html">
+                <source>SlideBar Color</source>
+                <target>لون الجانب</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/settings/settings.component.html</context>
+                    <context context-type="linenumber">9</context>
+                </context-group>
+            </trans-unit>
+            <trans-unit id="41dfbf99fad39c5672dbb2bdc775e464fdd15b3d" datatype="html">
+                <source>Dashboard Color</source>
+                <target>لون النظام</target>
+                <context-group purpose="location">
+                    <context context-type="sourcefile">app/pages/settings/settings.component.html</context>
+                    <context context-type="linenumber">32</context>
+                </context-group>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
