@@ -3,11 +3,11 @@
         <div class=" col-md-12">
             <div class=" card">
                 <div class=" card-header">
-                    <h5 class=" title">Subscriber Measurement</h5></div>
+                    <h5 class=" title" i18n>Subscriber Measurement</h5></div>
                 <div class=" card-body">
                     <form (ngSubmit)="find(subscriberId)">
                     <div class="form-group">
-                        <label>subscriber Id</label>
+                        <label i18n>subscriber Id</label>
                         <input [(ngModel)]="subscriberId" class="form-control" id="subscriberId" name="subscriberId"
                                required type="text">
                     </div>
@@ -20,8 +20,7 @@
                             <div class=" card">
                                 <div class=" card-header">
                                     <div class=" row">
-                                        <div class=" col-md-9"><h4 class=" card-title">Subscriber Measurement
-                                            Records</h4></div>
+                                        <div class=" col-md-9"><h4 class=" card-title" i18n>Subscriber Measurement Records</h4></div>
                                         <div class=" col-md-2">
                                             <button (click)="newRecord(subscriberId)" class="btn btn-dark"
                                                     style="width: 200px; ">new
@@ -38,15 +37,15 @@
                                             <thead class=" text-primary">
                                             <tr>
                                                 <th scope="col">#</th>
-                                                <th scope="col">Date</th>
-                                                <th scope="col">Height</th>
-                                                <th scope="col">Weight</th>
-                                                <th scope="col">Chest</th>
-                                                <th scope="col">Shoulders</th>
-                                                <th scope="col">Arms</th>
-                                                <th scope="col">Stomach</th>
-                                                <th scope="col">Pelvis</th>
-                                                <th scope="col">Thigh</th>
+                                                <th scope="col" i18n>Date</th>
+                                                <th scope="col" i18n>Height</th>
+                                                <th scope="col" i18n>Weight</th>
+                                                <th scope="col" i18n>Chest</th>
+                                                <th scope="col" i18n>Shoulders</th>
+                                                <th scope="col" i18n>Arms</th>
+                                                <th scope="col" i18n>Stomach</th>
+                                                <th scope="col" i18n>Pelvis</th>
+                                                <th scope="col" i18n>Thigh</th>
                                             </tr>
                                             </thead>
                                             <tbody>

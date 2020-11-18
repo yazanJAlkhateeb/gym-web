@@ -3,11 +3,11 @@
         <div class=" col-md-8">
             <div class=" card">
                 <div class=" card-header">
-                    <h5 class=" title">Check Subscriber</h5></div>
+                    <h5 class=" title" i18n>Check Subscriber</h5></div>
                 <div class=" card-body">
                     <form (ngSubmit)="onSubmit()">
                         <div class="form-group">
-                            <label>subscriber Id</label>
+                            <label i18n>subscriber Id</label>
                             <input [(ngModel)]="subscriberId" class="form-control" id="subscriberId" name="subscriberId"
                                    required type="text">
                         </div>
@@ -19,45 +19,45 @@
                         <div class=" row" style="margin-top: 20px">
                             <div class=" col-md-5 pr-md-1">
                                 <div class="form-group">
-                                    <p>Subscriber Id :  {{subscriber.subscriberId}}</p>
+                                    <p i18n>Subscriber Id :  {{subscriber.subscriberId}}</p>
                                 </div>
                             </div>
                         </div>
                         <div class=" row " style="margin-top: 20px">
                             <div class=" col-md-6 pr-md-1">
                                 <div class="form-group">
-                                    <p> Name :  {{subscriber.name}}</p>
+                                    <p i18n> Name :  {{subscriber.name}}</p>
                                 </div>
                             </div>
                         </div>
                         <div class=" row" style="margin-top: 20px">
                             <div class=" col-md-6 pr-md-1">
                                 <div class=" form-group">
-                                    <p> Starting Date :  {{subscriber.startOfSubscription}}</p>
+                                    <p i18n> Starting Date :  {{subscriber.startOfSubscription}}</p>
                                 </div>
                             </div>
                             <div class=" col-md-6 pl-md-1">
                                 <div class="form-group">
-                                    <p> Ending Date :   {{subscriber.endOfSubscription}}</p>
+                                    <p i18n> Ending Date :   {{subscriber.endOfSubscription}}</p>
                                 </div>
                             </div>
                         </div>
                         <div class=" row" style="margin-top: 20px">
                             <div class=" col-md-6 pr-md-1">
                                 <div class=" form-group">
-                                    <p> Email address :  {{subscriber.email}}</p>
+                                    <p i18n> Email address :  {{subscriber.email}}</p>
                                 </div>
                             </div>
                             <div class=" col-md-6 pl-md-1">
                                 <div class=" form-group">
-                                    <p> Phone Number :  {{subscriber.phoneNumber}}</p>
+                                    <p i18n> Phone Number :  {{subscriber.phoneNumber}}</p>
                                 </div>
                             </div>
                         </div>
                         <div class=" row" style="margin-top: 20px">
                             <div class=" col-md-12">
                                 <div class=" form-group">
-                                    <p> Address :  {{subscriber.address}}</p>
+                                    <p i18n> Address :  {{subscriber.address}}</p>
                                 </div>
                             </div>
                         </div>
@@ -65,17 +65,17 @@
                             <div class=" col-md-6">
                                 <div class=" form-group">
                                     <p *ngIf="today(subscriber.endOfSubscription);then active else notActive"></p>
-                                    <ng-template #active><p>status :<a class="text-success"> Active</a></ng-template>
-                                    <ng-template #notActive><p>status :<a class="text-danger"> Not Active</a>
+                                    <ng-template #active><p i18n>status :<a class="text-success"> Active</a></ng-template>
+                                    <ng-template #notActive><p i18n>status :<a class="text-danger"> Not Active</a>
                                     </ng-template>
                                 </div>
                             </div>
                             <div class=" col-md-6">
                                 <div class=" form-group">
                                     <p *ngIf="paid(subscriber.totalSubscriptionAmount,subscriber.paidSubscriptionAmount)>0;then notPaidAll else paidAll"></p>
-                                    <ng-template #notPaidAll><p>status :<a class="text-danger">
+                                    <ng-template #notPaidAll><p i18n>status :<a class="text-danger">
                                         {{paid(subscriber.totalSubscriptionAmount,subscriber.paidSubscriptionAmount)}} JOD Must be Paid!</a></ng-template>
-                                    <ng-template #paidAll><p>status :<a class="text-success"> no amount to be paid</a>
+                                    <ng-template #paidAll><p i18n>status :<a class="text-success"> no amount to be paid</a>
                                     </ng-template>
                                 </div>
                             </div>

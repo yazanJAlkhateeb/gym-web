@@ -4,6 +4,13 @@
   "newProjectRoot": "projects",
   "projects": {
     "gym-web": {
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "ar": "src/locale/messages.ar.xlf",
+          "en": "src/locale/messages.xlf"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,6 +24,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": true,
+            "aot": true,
             "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -47,7 +56,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -58,6 +66,14 @@
                   "maximumError": "5mb"
                 }
               ]
+            },
+            "ar": {
+              "localize": ["ar"],
+              "baseHref": "/ar/"
+            },
+            "en": {
+              "localize": ["en"],
+              "baseHref": "/en/"
             }
           }
         },
@@ -69,6 +85,12 @@
           "configurations": {
             "production": {
               "browserTarget": "gym-web:build:production"
+            },
+            "ar": {
+              "browserTarget": "gym-web:build:ar"
+            },
+            "en": {
+              "browserTarget": "gym-web:build:en"
             }
           }
         },
