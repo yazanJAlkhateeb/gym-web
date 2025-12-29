@@ -2,14 +2,14 @@
   "name": "gym-web",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start:ar": "ng serve --configuration=ar",
-    "start": "ng serve --configuration=en",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
+    "ng": "NODE_OPTIONS=--openssl-legacy-provider ng",
+    "start:ar": "NODE_OPTIONS=--openssl-legacy-provider ng serve --configuration=ar",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider ng serve --configuration=en",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider ng build",
+    "test": "NODE_OPTIONS=--openssl-legacy-provider ng test",
+    "lint": "NODE_OPTIONS=--openssl-legacy-provider ng lint",
+    "e2e": "NODE_OPTIONS=--openssl-legacy-provider ng e2e",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install --legacy-peer-deps && npm start"
   },
   "repository": {
     "type": "git",
@@ -60,14 +60,14 @@
     "@angular/compiler": "10.2.1",
     "@angular/core": "10.2.1",
     "@angular/forms": "10.2.1",
-    "@angular/localize": "^10.2.1",
+    "@angular/localize": "10.2.1",
     "@angular/platform-browser": "10.2.1",
     "@angular/platform-browser-dynamic": "10.2.1",
     "@angular/router": "10.2.1",
-    "@ng-bootstrap/ng-bootstrap": "6.0.0",
+    "@ng-bootstrap/ng-bootstrap": "7.0.0",
     "chart.js": "2.8.0",
     "core-js": "3.6.4",
-    "ngx-toastr": "10.0.4",
+    "ngx-toastr": "13.0.0",
     "rxjs": "6.6.3",
     "tslib": "^2.0.0",
     "zone.js": "0.10.3"
@@ -80,7 +80,7 @@
     "@types/jasmine": "3.5.8",
     "@types/jasminewd2": "2.0.8",
     "@types/node": "13.9.0",
-    "codelyzer": "5.2.1",
+    "codelyzer": "6.0.0",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~5.0.0",
@@ -92,6 +92,7 @@
     "protractor": "~7.0.0",
     "ts-node": "8.6.2",
     "tslint": "~6.1.0",
-    "typescript": "4.0.5"
+    "typescript": "4.0.5",
+    "websocket-driver": "^0.7.4"
   }
 }

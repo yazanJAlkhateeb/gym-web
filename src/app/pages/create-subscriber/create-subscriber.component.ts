@@ -19,7 +19,6 @@ export class CreateSubscriberComponent implements OnInit {
     constructor(private subscriberService: SubscriberService,
                 private router: Router,
                 private toastr: ToastrService) {
-        this.webcamImage==null;
     }
 
     public get triggerObservable(): Observable<void> {
@@ -36,7 +35,6 @@ export class CreateSubscriberComponent implements OnInit {
     save() {
         this.subscriberService
             .createSubscriber(this.subscriber).subscribe(data => {
-                console.log(data);
                 this.subscriber = new Subscriber();
                 this.gotoList();
             },
@@ -44,16 +42,6 @@ export class CreateSubscriberComponent implements OnInit {
     }
 
     onSubmit() {
-        if (this.webcamImage == null) {
-            this.toastr.success('<span class="tim-icons icon-bell-55" [data-notify]="icon"></span> Please get Picture for the subscriber', '', {
-                disableTimeOut: true,
-                enableHtml: true,
-                closeButton: true,
-                toastClass: 'alert alert-info alert-with-icon',
-                positionClass: 'toast-' + 'top' + '-' + 'center'
-            });
-        }
-        this.subscriber.image = this.webcamImage.imageAsDataUrl;
         this.save();
         this.gotoList();
     }

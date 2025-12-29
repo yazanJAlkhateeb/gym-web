@@ -38,13 +38,7 @@ export class UpdateSubscriberComponent implements OnInit {
     public get triggerObservable(): Observable<void> {
         return this.trigger.asObservable();
     }
-    handleImage(webcamImage: WebcamImage): void {
-        this.webcamImage = webcamImage;
-    }
     updateSubscriber() {
-        if (this.webcamImage!=null){
-            this.subscriber.image = this.webcamImage.imageAsDataUrl;
-        }
         this.subscriberService.updateSubscriber(this.id, this.subscriber)
             .subscribe(data => {
                 console.log(data);

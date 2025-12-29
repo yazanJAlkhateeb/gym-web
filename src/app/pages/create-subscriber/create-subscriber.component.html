@@ -114,34 +114,34 @@
                 </div>
             </div>
         </div>
-        <div class=" col-md-4">
-            <div class=" card card-user">
-                <div class=" card-body">
-                    <p class=" card-text"></p>
-                    <div class=" author">
-                        <div class=" block block-one"></div>
-                        <p class=" description">Subscriber picture</p>
-                        <div *ngIf="webcamImage">
-                            <div class="snapshot">
-                                <img [src]="webcamImage.imageAsDataUrl" height="200" width="250"/>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div>
-                                <webcam (imageCapture)="handleImage($event)" *ngIf="webcamImage==null"
-                                        [height]="300"
-                                        [trigger]="triggerObservable"
-                                        [width]="400">
-                                </webcam>
-                            </div>
-                            <button (click)="triggerSnapshot();" *ngIf="webcamImage==null" class="btn btn-dark">
-                                take a pic
-                            </button>
+<!--        <div class=" col-md-4">-->
+<!--            <div class=" card card-user">-->
+<!--                <div class=" card-body">-->
+<!--                    <p class=" card-text"></p>-->
+<!--                    <div class=" author">-->
+<!--                        <div class=" block block-one"></div>-->
+<!--                        <p class=" description">Subscriber picture</p>-->
+<!--                        <div *ngIf="webcamImage">-->
+<!--                            <div class="snapshot">-->
+<!--                                <img [src]="webcamImage.imageAsDataUrl" height="200" width="250"/>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                        <div class="column">-->
+<!--                            <div>-->
+<!--                                <webcam (imageCapture)="handleImage($event)" *ngIf="webcamImage==null"-->
+<!--                                        [height]="300"-->
+<!--                                        [trigger]="triggerObservable"-->
+<!--                                        [width]="400">-->
+<!--                                </webcam>-->
+<!--                            </div>-->
+<!--                            <button (click)="triggerSnapshot();" *ngIf="webcamImage==null" class="btn btn-dark">-->
+<!--                                take a pic-->
+<!--                            </button>-->
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
 </div>
